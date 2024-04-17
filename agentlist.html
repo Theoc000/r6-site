@@ -10,6 +10,28 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container h3 {
+  margin-bottom: 5px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
 </style>
 </head>
 <body>
@@ -20,7 +42,7 @@ body {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Z6 HOME</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Maps</a>
-    <a href="agent.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENT</a>
+    <a href="agentlist.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENT</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">SAISON<i class="fa fa-caret-down"></i></button>     
@@ -44,8 +66,31 @@ body {font-family: "Lato", sans-serif}
 
 
 <div class="gallery">
-    <a href="lien_image1.html"><img src="image1.jpg" alt="Image 1"></a>
-    <a href="lien_image2.html"><img src="image2.jpg" alt="Image 2"></a>
-    <!-- Ajoutez autant d'images que vous le souhaitez -->
+  <div class="image-container">
+    <h3>Titre de l'image 1</h3>
+    <a href="ash.html"><img src="ashlogo.png" alt="ash logo"></a>
   </div>
+  <div class="image-container">
+    <h3>Titre de l'image 2</h3>
+    <a href="agent.html"><img src="termitelogo.png" alt="thermite logo"></a>
+  </div>
+  <div class="image-container">
+    <h3>Titre de l'image 1</h3>
+    <a href="castle.html"><img src="castle logo.webp" alt="castle logo"></a>
+  </div>
+  <div class="image-container">
+    <h3>Titre de l'image 2</h3>
+    <a href="pulse.html"><img src="pulselogo.png" alt="pulse logo"></a>
+  </div>
+  <div class="image-container">
+    <h3>Titre de l'image 1</h3>
+    <a href="twitch.html"><img src="twitchlogo.png" alt="twitch logo"></a>
+  </div>
+  <div class="image-container">
+    <h3>Titre de l'image 2</h3>
+    <a href="lien_image2.html"><img src="image2.jpg" alt="Image 2"></a>
+  </div>
+  <!-- Ajoutez autant d'images que vous le souhaitez -->
+</div>
+
   
