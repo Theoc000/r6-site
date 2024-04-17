@@ -11,59 +11,123 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+.background-zone {
+      background-color: #fa5f06; /* Couleur de fond de la zone spécifique */
+      padding: 20px; /* Ajoutez du padding pour séparer le contenu de la bordure */
+    
+}
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Z6 HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Maps</a>
-    <a href="agent.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">SAISON<i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="SAISON 1.html" class="w3-bar-item w3-button">SAISON 1</a>
-        <a href="#" class="w3-bar-item w3-button">SAISON 2</a>
-        <a href="#" class="w3-bar-item w3-button">SAISON 3</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Z6 HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Maps</a>
+      <a href="agent.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENT</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">SAISON<i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="SAISON 1.html" class="w3-bar-item w3-button">SAISON 1</a>
+          <a href="#" class="w3-bar-item w3-button">SAISON 2</a>
+          <a href="#" class="w3-bar-item w3-button">SAISON 3</a>
+        </div>
       </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-</div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="thermite.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="thermite.jpg" alt="Hamburger Catering" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      <h1 class="w3-xxlarge">Le Catering</h1>
+    </div>
+  </header>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
+  <div class="background-zone">
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="termite.webp" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+      </div>
 
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="r6-operator.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-    </div>
-
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">BIO</h1><br>
-      <h5 class="w3-center">FBI SWAT</h5>
-      <h5 class="w3-center">Hard Breacher</h5>
-      <p class="w3-large">Thermite est un opérateur attaquant spécialisé dans le forage de passages à travers les murs renforcés. Avec son dispositif spécial, l'Exothermic Charge, il peut créer de larges ouvertures dans les murs renforcés et les panneaux barricadés, offrant ainsi à son équipe de nouvelles voies d'entrée et de nouvelles perspectives tactiques. Grâce à sa capacité à contourner les défenses ennemies les plus solides, Thermite est un atout précieux pour toute équipe d'assaut.<span class="w3-tag w3-light-grey"></p>
-    </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">BIO</h1><br>
+        <h5 class="w3-center">FBI SWAT</h5>
+        <h5 class="w3-center">Hard Breacher</h5>
+        <p class="w3-large">Thermite est un opérateur attaquant spécialisé dans le forage de passages à travers les murs renforcés. Avec son dispositif spécial, l'Exothermic Charge, il peut créer de larges ouvertures dans les murs renforcés et les panneaux barricadés, offrant ainsi à son équipe de nouvelles voies d'entrée et de nouvelles perspectives tactiques. Grâce à sa capacité à contourner les défenses ennemies les plus solides, Thermite est un atout précieux pour toute équipe d'assaut.<span class="w3-tag w3-light-grey"></p>
+      </div>
   </div>
-     <img src="M1014.webp" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-     <img src="556xi.avif" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-     <img src="5.7_USG.avif" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-     <img src="M1014.webp" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-
+    </div>
+    <div class="w3-row w3-padding-64 w3-center" id="about">
+      <div class="w3-half">
+        <div class="operator__loadout__category">
+          <h2 class="operator__loadout__category__title"><span data-source="translations" data-innertext="Arme principale">Arme principale 1</span></h2>
+          <div class="operator__loadout__category__items">
+            <div class="operator__loadout__weapon">
+              <p>M1014</p>
+              <div class="media">
+                <img src="M1014.webp" alt="" loading="lazy">
+              </div>
+              <p>FUSIL D'ASSAUT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="operator__loadout__category">
+          <h2 class="operator__loadout__category__title"><span data-source="translations" data-innertext="Arme principale">Arme principale 2</span></h2>
+          <div class="operator__loadout__category__items">
+            <div class="operator__loadout__weapon">
+              <p>M1014</p>
+              <div class="media">
+                <img src="556xi.avif" alt="" loading="lazy">
+              </div>
+              <p>FUSIL D'ASSAUT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-row w3-padding-64 w3-center" id="about">
+      <div class="w3-half">
+        <div class="operator__loadout__category">
+          <h2 class="operator__loadout__category__title"><span data-source="translations" data-innertext="Arme secondaire">Arme secondaire 1</span></h2>
+          <div class="operator__loadout__category__items">
+            <div class="operator__loadout__weapon">
+              <p>M1014</p>
+              <div class="media">
+                <img src="5.7_USG.avif" alt="" loading="lazy">
+              </div>
+              <p>FUSIL D'ASSAUT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="operator__loadout__category">
+          <h2 class="operator__loadout__category__title"><span data-source="translations" data-innertext="Arme secondaire">Arme secondaire 2</span></h2>
+          <div class="operator__loadout__category__items">
+            <div class="operator__loadout__weapon">
+              <p>M1014</p>
+              <div class="media">
+                <img src="M45_MEUSOC.webp" alt="" loading="lazy">
+              </div>
+              <p>FUSIL D'ASSAUT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
   
   <hr>
   
