@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes de Rainbow Six Siege</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #ffbf00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+
+        .map-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .map-card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .map-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .map-card h2 {
+            color: #ffbf00;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+
+        .map-card p {
+            text-align: justify;
+            margin: 10px 0 0;
+            font-size: 0.95em;
+        }
+
+        .map-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+        }
+
+        .map-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .map-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+        }
+
+        .map-card:hover::before {
+            opacity: 1;
+        }
+
+        .map-card h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #ffbf00;
+            margin: 8px auto 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Les Cartes de Rainbow Six Siege</h1>
+    
+    <div class="map-container">
+        <!-- Map 1 -->
+        <div class="map-card">
+            <img src="bank.jfif" alt="Carte Bank">
+            <h2>Bank</h2>
+            <p>Une carte située dans un grand bâtiment bancaire, où les joueurs doivent naviguer à travers des bureaux, un coffre-fort, et des escaliers complexes.</p>
+        </div>
+
+        <!-- Map 2 -->
+        <div class="map-card">
+            <img src="cafe.jpg" alt="Carte Kafe Dostoyevsky">
+            <h2>Kafe Dostoyevsky</h2>
+            <p>Kafe est une carte située dans un café russe, offrant des combats intenses à travers trois étages bien distincts.</p>
+        </div>
+
+        <!-- Map 3 -->
+        <div class="map-card">
+            <img src="coast.avif" alt="Carte Coastline">
+            <h2>Coastline</h2>
+            <p>Cette carte située sur la côte espagnole propose une villa moderne avec de nombreux points d'entrée et de vastes espaces ouverts.</p>
+        </div>
+
+        <!-- Ajouter d'autres cartes ici -->
+        <div class="map-card">
+            <img src="oregon.jpg" alt="Carte Oregon">
+            <h2>Oregon</h2>
+            <p>Oregon est une carte d'une masion en construction, offrant des combats intenses à travers trois bâtiments bien distincts.</p>
+        </div>
+
+        <div class="map-card">
+            <img src="chalet.avif" alt="Carte Chalet">
+            <h2>Chalet</h2>
+            <p>Chalet est une carte d'une maison enneiger, offrant des combats diverses à travers ses multiples pièces.</p>
+        </div>
+
+        <div class="map-card">
+            <img src="front.avif" alt="Carte Frontière">
+            <h2>Frontière</h2>
+            <p>Frontière est une carte d'un bâtiment délabrer, offrant des combats extraordinaire à travers ses multiples entrées et ses sites à défendre.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
