@@ -16,13 +16,37 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            position: relative; /* Added to allow absolute positioning of the button */
+        }
+
+        /* Style for the 'Retour au Menu' button */
+        .menu-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ffbf00;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .menu-button:hover {
+            background-color: #ffd700;
+            transform: translateY(-2px);
         }
 
         h1 {
             color: #ffbf00;
             text-transform: uppercase;
             letter-spacing: 3px;
-            margin-top: 20px;
+            margin-top: 60px; /* Adjusted to make room for the button */
             font-size: 2.5em;
         }
 
@@ -103,6 +127,9 @@
 </head>
 <body>
 
+    <!-- 'Retour au Menu' button -->
+    <button class="menu-button" onclick="window.location.href='index.html';">Retour au Menu</button>
+
     <h1>Les Cartes de Rainbow Six Siege</h1>
     
     <div class="map-container">
@@ -131,19 +158,19 @@
         <div class="map-card">
             <img src="oregon.jpg" alt="Carte Oregon">
             <h2>Oregon</h2>
-            <p>Oregon est une carte d'une masion en construction, offrant des combats intenses à travers trois bâtiments bien distincts.</p>
+            <p>Oregon est une carte d'une maison en construction, offrant des combats intenses à travers trois bâtiments bien distincts.</p>
         </div>
 
         <div class="map-card">
             <img src="chalet.avif" alt="Carte Chalet">
             <h2>Chalet</h2>
-            <p>Chalet est une carte d'une maison enneiger, offrant des combats diverses à travers ses multiples pièces.</p>
+            <p>Chalet est une carte d'une maison enneigée, offrant des combats divers à travers ses multiples pièces.</p>
         </div>
 
         <div class="map-card">
             <img src="front.avif" alt="Carte Frontière">
             <h2>Frontière</h2>
-            <p>Frontière est une carte d'un bâtiment délabrer, offrant des combats extraordinaire à travers ses multiples entrées et ses sites à défendre.</p>
+            <p>Frontière est une carte d'un bâtiment délabré, offrant des combats extraordinaires à travers ses multiples entrées et ses sites à défendre.</p>
         </div>
 
     </div>

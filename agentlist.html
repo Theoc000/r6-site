@@ -18,7 +18,23 @@ body {font-family: "Lato", sans-serif}
   align-items: center;
   margin: 20px auto;
 }
-
+ /* Style for the 'Retour au Menu' button */
+ .menu-button {
+   position: absolute;
+ top: 20px;
+ left: 20px;
+ background-color: #ffbf00;
+ color: #000000;
+ border: none;
+ border-radius: 5px;
+ padding: 10px 20px;
+ font-size: 1em;
+ cursor: pointer;
+ text-transform: uppercase;
+ font-weight: bold;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
 .image-container {
   text-align: center;
 }
@@ -36,33 +52,9 @@ body {font-family: "Lato", sans-serif}
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Z6 HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Maps</a>
-    <a href="agentlist.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">SAISON<i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="SAISON 1.html" class="w3-bar-item w3-button">SAISON 1</a>
-        <a href="#" class="w3-bar-item w3-button">SAISON 2</a>
-        <a href="#" class="w3-bar-item w3-button">SAISON 3</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
+ <!-- 'Retour au Menu' button -->
+ <button class="menu-button" onclick="window.location.href='index.html';">Retour au Menu</button>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#Z6" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Z6</a>
-  <a href="#AGENT" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AGENT</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
 
 
 <div class="gallery">
