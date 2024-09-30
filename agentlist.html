@@ -1,88 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<title>Z6 siege</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-}
- /* Style for the 'Retour au Menu' button */
- .menu-button {
-   position: absolute;
- top: 20px;
- left: 20px;
- background-color: #ffbf00;
- color: #000000;
- border: none;
- border-radius: 5px;
- padding: 10px 20px;
- font-size: 1em;
- cursor: pointer;
- text-transform: uppercase;
- font-weight: bold;
- box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
- transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.image-container {
-  text-align: center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z6 Siege</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+        }
 
-.image-container h3 {
-  margin-bottom: 5px;
-}
+        /* Style for the 'Retour au Menu' button */
+        .menu-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ffbf00;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
 
-.image-container img {
-  width: 100%;
-  height: auto;
-}
+        .menu-button:hover {
+            background-color: #ffd700;
+            transform: translateY(-2px);
+        }
 
-</style>
+        h1 {
+            color: #ffbf00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 60px;
+            font-size: 2.5em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .image-container {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .image-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-container h3 {
+            color: #ffbf00;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+
+        .image-container h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #ffbf00;
+            margin: 8px auto 0;
+        }
+    </style>
 </head>
 <body>
 
- <!-- 'Retour au Menu' button -->
- <button class="menu-button" onclick="window.location.href='index.html';">Retour au Menu</button>
+    <!-- 'Retour au Menu' button -->
+    <button class="menu-button" onclick="window.location.href='index.html';">Retour au Menu</button>
 
+    <h1>Z6 Siege - Agents</h1>
 
+    <div class="gallery">
+        <div class="image-container">
+            <h3>Ash</h3>
+            <a href="ash.html"><img src="ashlogo.png" alt="ash logo"></a>
+        </div>
+        <div class="image-container">
+            <h3>Thermite</h3>
+            <a href="agent.html"><img src="termitelogo.png" alt="thermite logo"></a>
+        </div>
+        <div class="image-container">
+            <h3>Castle</h3>
+            <a href="castle.html"><img src="castle logo.webp" alt="castle logo"></a>
+        </div>
+        <div class="image-container">
+            <h3>Pulse</h3>
+            <a href="pulse.html"><img src="pulselogo.png" alt="pulse logo"></a>
+        </div>
+        <div class="image-container">
+            <h3>Twitch</h3>
+            <a href="twitch.html"><img src="twitchlogo.png" alt="twitch logo"></a>
+        </div>
+        <div class="image-container">
+            <h3>Image 2</h3>
+            <a href="lien_image2.html"><img src="image2.jpg" alt="Image 2"></a>
+        </div>
+    </div>
 
-<div class="gallery">
-  <div class="image-container">
-    <h3>Titre de l'image 1</h3>
-    <a href="ash.html"><img src="ashlogo.png" alt="ash logo"></a>
-  </div>
-  <div class="image-container">
-    <h3>Titre de l'image 2</h3>
-    <a href="agent.html"><img src="termitelogo.png" alt="thermite logo"></a>
-  </div>
-  <div class="image-container">
-    <h3>Titre de l'image 1</h3>
-    <a href="castle.html"><img src="castle logo.webp" alt="castle logo"></a>
-  </div>
-  <div class="image-container">
-    <h3>Titre de l'image 2</h3>
-    <a href="pulse.html"><img src="pulselogo.png" alt="pulse logo"></a>
-  </div>
-  <div class="image-container">
-    <h3>Titre de l'image 1</h3>
-    <a href="twitch.html"><img src="twitchlogo.png" alt="twitch logo"></a>
-  </div>
-  <div class="image-container">
-    <h3>Titre de l'image 2</h3>
-    <a href="lien_image2.html"><img src="image2.jpg" alt="Image 2"></a>
-  </div>
-  <!-- Ajoutez autant d'images que vous le souhaitez -->
-</div>
-
-  
+</body>
+</html>

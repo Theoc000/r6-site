@@ -1,145 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>AGENT</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-.background-zone {
-      background-color: #fa5f06; /* Couleur de fond de la zone spécifique */
-      padding: 100px; /* Ajoutez du padding pour séparer le contenu de la bordure */
-    
-}
-  .weapon-name, .weapon-info {
-    border: 1px solid black; /* Ajoute une bordure noire de 1px */
-    padding: 5px; /* Ajoute un espacement intérieur de 5px pour plus de lisibilité */
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-</style>
+        /* Navbar */
+        .w3-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: #000000;
+            z-index: 1000;
+        }
 
+        .w3-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .w3-bar-item {
+            color: #ffbf00;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .w3-bar-item:hover {
+            color: #ffd700;
+        }
+
+        /* Header */
+        .w3-display-container {
+            margin-top: 50px; /* Espace ajouté pour éviter que la barre ne couvre le contenu */
+            width: 100%;
+            height: 50vh;
+            background: url('castlepp.jpg') center/cover no-repeat;
+        }
+
+        /* Background Zone */
+        .background-zone {
+            background-color: #1f1f1f;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        h1, h5 {
+            color: #ffbf00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Weapon Info */
+        .weapon-info, .weapon-name {
+            background-color: #333;
+            border-radius: 5px;
+            padding: 10px;
+            color: #ffbf00;
+            margin: 15px 0;
+        }
+
+        .weapon-info img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.5s ease;
+        }
+
+        /* Image Links */
+        .w3-row.w3-center img {
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .w3-row.w3-center img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 2px solid #ffbf00;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Z6 HOME</a>
-      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Maps</a>
-      <a href="agentlist.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AGENT</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">SAISON<i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="SAISON 1.html" class="w3-bar-item w3-button">SAISON 1</a>
-          <a href="#" class="w3-bar-item w3-button">SAISON 2</a>
-          <a href="#" class="w3-bar-item w3-button">SAISON 3</a>
-        </div>
-      </div>
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-    <img class="w3-image" src="castlepp.jpg" alt="Hamburger Catering" width="1600" height="800">
-    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    </div>
-  </header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-  <div class="background-zone">
-    <!-- About Section -->
-    <div class="w3-row w3-padding-64" id="about">
-      <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="castleelite.avif" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
-      </div>
-
-      <div class="w3-col m6 w3-padding-large">
-        <h1 class="w3-center">BIO</h1><br>
-        <h5 class="w3-center">FBI SWAT</h5>
-        <h5 class="w3-center">Hard Breacher</h5>
-        <p class="w3-large">Thermite est un opérateur attaquant spécialisé dans le forage de passages à travers les murs renforcés. Avec son dispositif spécial, l'Exothermic Charge, il peut créer de larges ouvertures dans les murs renforcés et les panneaux barricadés, offrant ainsi à son équipe de nouvelles voies d'entrée et de nouvelles perspectives tactiques. Grâce à sa capacité à contourner les défenses ennemies les plus solides, Thermite est un atout précieux pour toute équipe d'assaut.<span class="w3-tag w3-light-grey"></p>
-      </div>
-  </div>
-    </div>
-    <div class="w3-row w3-padding-64 w3-center" id="about">
-      <div class="w3-half">
-        <div class="operator__loadout__category">
-          <h2 class="operator__loadout__category__title"><span class="weapon-name" data-source="translations" data-innertext="Arme principale">Arme principale 1</span></h2>
-          <div class="operator__loadout__category__items">
-            <div class="operator__loadout__weapon">
-              <p class="weapon-info">M1014</p>
-              <div class="media">
-                <img src="M1014.webp" alt="" loading="lazy">
-              </div>
-              <p class="weapon-info">FUSIL D'ASSAUT</p>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar">
+            <a href="index.html" class="w3-bar-item">Z6 HOME</a>
+            <a href="#maps" class="w3-bar-item">Maps</a>
+            <a href="agentlist.html" class="w3-bar-item">AGENT</a>
+            <a href="#contact" class="w3-bar-item">Contact</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-bar-item">Saison</button>
+                <div class="w3-dropdown-content">
+                    <a href="SAISON 1.html">Saison 1</a>
+                    <a href="#">Saison 2</a>
+                    <a href="#">Saison 3</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="w3-half">
-        <div class="operator__loadout__category">
-          <h2 class="operator__loadout__category__title"><span class="weapon-name" data-source="translations" data-innertext="Arme principale">Arme principale 2</span></h2>
-          <div class="operator__loadout__category__items">
-            <div class="operator__loadout__weapon">
-              <p class="weapon-info">M1014</p>
-              <div class="media">
-                <img src="556xi.avif" alt="" loading="lazy">
-              </div>
-              <p class="weapon-info">FUSIL D'ASSAUT</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> 
-    <div class="w3-row w3-padding-64 w3-center" id="about">
-      <div class="w3-half">
-        <div class="operator__loadout__category">
-          <h2 class="operator__loadout__category__title"><span class="weapon-name" data-source="translations" data-innertext="Arme secondaire">Arme secondaire 1</span></h2>
-          <div class="operator__loadout__category__items">
-            <div class="operator__loadout__weapon">
-              <p class="weapon-info">M1014</p>
-              <div class="media">
-                <img src="5.7_USG.avif" alt="" loading="lazy">
-              </div>
-              <p class="weapon-info">FUSIL D'ASSAUT</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w3-half">
-        <div class="operator__loadout__category">
-          <h2 class="operator__loadout__category__title"><span class="weapon-name" data-source="translations" data-innertext="Arme secondaire">Arme secondaire 2</span></h2>
-          <div class="operator__loadout__category__items">
-            <div class="operator__loadout__weapon">
-              <p class="weapon-info">M1014</p>
-              <div class="media">
-                <img src="M45_MEUSOC.webp" alt="" loading="lazy" >
-              </div>
-              <p class="weapon-info">FUSIL D'ASSAUT</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="w3-row w3-center">
-      <a href="lien_de_votre_page.html" >
-        <img src="ash.webp" alt="Description de l'image" width="200" height="200">
-      </a>
+    <!-- Header -->
+    <header class="w3-display-container"></header>
+
+    <!-- Content -->
+    <div class="w3-content background-zone">
+        <div class="w3-row">
+            <div class="w3-half">
+                <img src="castleelite.avif" alt="Thermite Elite" class="w3-image" width="600">
+            </div>
+            <div class="w3-half">
+                <h1 class="w3-center">Bio</h1>
+                <h5 class="w3-center">FBI SWAT</h5>
+                <h5 class="w3-center">Hard Breacher</h5>
+                <p>Thermite est un opérateur attaquant spécialisé dans le forage de passages à travers les murs renforcés...</p>
+            </div>
+        </div>
+
+        <!-- Weapons Section -->
+        <div class="w3-row">
+            <div class="w3-half">
+                <h2>Arme principale 1</h2>
+                <p class="weapon-info">M1014</p>
+                <img src="M1014.webp" alt="M1014">
+            </div>
+            <div class="w3-half">
+                <h2>Arme principale 2</h2>
+                <p class="weapon-info">556xi</p>
+                <img src="556xi.avif" alt="556xi">
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-half">
+                <h2>Arme secondaire 1</h2>
+                <p class="weapon-info">5.7 USG</p>
+                <img src="5.7_USG.avif" alt="5.7 USG">
+            </div>
+            <div class="w3-half">
+                <h2>Arme secondaire 2</h2>
+                <p class="weapon-info">M45 MEUSOC</p>
+                <img src="M45_MEUSOC.webp" alt="M45 MEUSOC">
+            </div>
+        </div>
+
+        <div class="w3-row w3-center">
+            <a href="lien_de_votre_page.html">
+                <img src="ash.webp" alt="Ash" width="200" height="200">
+            </a>
+        </div>
     </div>
-  <hr>
-  
-  >
 
-<!-- End page content -->
-</div>
-
+    <hr>
+</body>
+</html>
